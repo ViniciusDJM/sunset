@@ -6,6 +6,7 @@
         <label for="nome">Nome do cliente:</label>
         <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
       </div>
+
       <div class="input-container">
         <label for="pao">Escolha o pão:</label>
         <select name="pao" id="pao" v-model="pao">
@@ -13,6 +14,7 @@
           <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
         </select>
       </div>
+
       <div class="input-container">
         <label for="carne">Escolha a carne do seu Burger:</label>
         <select name="carne" id="carne" v-model="carne">
@@ -20,6 +22,7 @@
           <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">{{ carne.tipo }}</option>
         </select>
       </div>
+
       <div id="opcionais-container" class="input-container">
         <label id="opcionais-title" for="opcionais">Selecione os opcionais:</label>
         <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id">
@@ -27,6 +30,7 @@
           <span>{{ opcional.tipo }}</span>
         </div>
       </div>
+      
       <div class="input-container">
         <input class="submit-btn" type="submit" value="Criar meu Burger!">
       </div>
