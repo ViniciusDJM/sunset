@@ -1,4 +1,4 @@
-# make_your_burger
+# farma_summit
 
 ## Project setup
 ```

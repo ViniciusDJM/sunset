@@ -1,7 +1,5 @@
 <template>
-  <div id="main-banner">
-    <h1>Crie seu hamburguer!</h1>
-  </div>
+  <div id="main-banner"></div>
 </template>
 
 <script>
@@ -13,21 +11,18 @@
 <style scoped>
 
   #main-banner {
-    background-image: url('/img/burger.jpg');
-    background-position: 0 -250px;
+    background-image: url('/img/banner.png');
     background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    height: 142px;
+    width: 360px;
+    top: 16px;
+    border-radius: 0px;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, 0%);
   }
 
-  #main-banner h1 {
-    color: #FFF;
-    text-align: center;
-    font-size: 60px;
-    background-color: #222;
-    padding: 20px 40px;
-  }
 
 </style>
